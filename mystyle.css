@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --themeRed: #e43a47;
+    --gray: #efefef;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button,body
+{
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullcontainer{
+    width: 100%;
+    background-color:pink;
+}
+
+.container{
+    width: 1140px;
+    margin:auto;
+}
+
+.SectionTitle{
+    width: 300px;
+    border-bottom: 3px solid #610C63;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    padding:10px 0;
+    text-transform: uppercase;
+}
+
+.SectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #610C63;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(23% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid white;
+}
+
+section{
+    padding: 100px 0;
+    position: relative;
+}
+/* Home styling */
+
+header{
+    width:100%;
+    background-color: #610C63;
+    position: fixed;
+    z-index: 2;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    padding: 12px 0;
+    height: 75px;
+
+}
+
+header .container .logo img{
+    height: 90%;
+    border-radius: 30px;
+}
+
+header nal{
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: var(--themeRed);
+}
+
+.banner{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(https://cdn.wallpapersafari.com/63/50/4XpUbo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color:white;
+    text-shadow: 0 0 2px black;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span{
+    background-color: var(--themeRed);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p{
+    color: #4C3575;
+    width: 50%;
+    margin-top: 10px;
+    font-size:18px;
+}
+
+.banner button{
+    background-color: #1363DF;
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.banner button:hover{
+    background-color: gray;
+    border: 2px;
+    outline: none;
+    color: black;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 19px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+/*Donation page*/
+
+.donation{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(https://wallpaperaccess.com/full/3561093.jpg);
+    /*background-image: url(https://wallpaperaccess.com/full/3188923.jpg);*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.donation h1{
+    display: inline-block;
+    font-size: 2.5rem;
+    color:#483838;
+    width: 50%;
+    line-height: 3.2rem;
+    font-weight: 100;
+}
+
+.donation h2{
+    font-size: 2.5rem;
+    color:#483838;
+    width: 50%;
+    line-height: 3.6rem;
+    font-weight: 500;
+}
+
+.donation h1 span{
+    background-color: #F49D1A;
+    display: inline-block;
+    line-height: 2.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.donation p{
+    color: #472D2D;
+    font-size: 1.2rem;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.donation button{
+    background-color: #610C63;
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.contact{
+    background-color: var(--themeRed);
+    color: white;
+}
+
+.contact .contactTitle{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.contact .contactTitle span{
+    font-weight: 800;
+}
+
+.contact button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border:0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contact button.joinNow{
+    background-color: black;
+    margin-right: 10px;
+    color: white;
+}
+
+.contact button.adoptBtn{
+    background-color: var(--gray);
+}
+
