@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+
+        body{
+            /* css reset */
+            margin: 0px;
+            padding: 0px;
+            color:black;
+            background-image: url("https://3.bp.blogspot.com/-avbffErDMy8/UGQLjfhqlpI/AAAAAAAAKrA/fCENqqRAqek/s0/donald-duck-cartoon-1920x1080-wallpaper.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            font-family: 'Abril Fatface';
+            font-size: 22px;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 8px 20px;
+            border: 2px solid red;
+            border-radius: 10px;
+            font-size: 2px;
+            cursor: pointer;
+            font-family: 'Abril Fatface';font-size: 15px;
+
+        }
+        .btn:hover{
+            background-color: rgba(7, 181, 255, 0.983);
+            color: black;
+        }
+        .container {
+            position:absolute;
+            left: 4px;
+            top:20px;
+            /* display: inline-block; */
+            border: 5px solid rgb(47, 1, 77);
+            background-color: #F8CB2E;
+            border-radius: 20px;
+            margin: 100px 100px;
+            padding: 33px 33px;
+            width: 50%;
+        }
+        .form-group input, select{
+            text-align: center;
+            display: block;
+            width:508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 8px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display:block;
+            width: 23%;
+            margin: 2px auto;
+            font-size:40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Tell Us Your Favourite Cartoon</h1>
+    <form action="">
+        <div class="form-group">
+            <input type="text" name="text" placeholder="Enter your Name">
+        </div><br>
+        <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Enter your Email-id">
+        </div><br>
+        <div class="form-group">
+            <select name="cartoon" id="cartoon">
+                <option value="--Here is Cartoon List--">--Here is Cartoon List--</option>
+                <option value="Pokemon">Pokemon</option>
+                <option value="Doremon">Doremon</option>
+                <option value="Sinchan">Sinchan</option>
+                <option value="Dragon Ball">Dragon Ball</option>
+                <option value="Ben 10">Ben 10</option>
+                <option value="Tom and Jerry">Tom and Jerry</option>
+                <option value="Oggy and The Cockroaches">Oggy and The Cockroaches</option>
+                <option value="Ninja Hattori">Ninja Hattori</option>
+                <option value="Chota Bheem">Chota Bheem</option>
+            </select>
+        </div><br>
+        <div class="form-group">
+            <button class="btn">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
