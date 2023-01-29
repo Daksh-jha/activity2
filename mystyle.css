@@ -78,7 +78,7 @@ header .container{
 
 header .container .logo{
     padding: 12px 0;
-    height: 74px;
+    height: 75px;
 
 }
 
@@ -120,7 +120,7 @@ header nav ul li a:hover{
 }
 
 .banner h1{
-    margin-top: 230px;
+    margin-top: 229px;
     display: inline-block;
     font-size: 3.5rem;
     color:white;
